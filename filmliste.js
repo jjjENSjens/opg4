@@ -50,7 +50,10 @@ var filmliste = [
 {"Title":"Inherent Vice","Year":"2014","Rated":"R","Released":"09 Jan 2015","Runtime":"148 min","Genre":"Comedy, Crime, Drama","Director":"Paul Thomas Anderson","Writer":"Paul Thomas Anderson (written for the screen by), Thomas Pynchon (based on the novel by)","Actors":"Joanna Newsom, Katherine Waterston, Joaquin Phoenix, Jordan Christian Hearn","Plot":"During the psychedelic 60s and 70s Larry \"Doc\" Sportello is surprised by his former girlfriend and her plot for her billionaire boyfriend, his wife, and her boyfriend. A plan for kidnapping gets shaken up by the oddball characters entangled in this groovy kidnapping romp based upon the novel by Thomas Pynchon.","Language":"English, Japanese","Country":"USA","Awards":"Nominated for 2 Oscars. Another 16 wins & 94 nominations.","Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjI2ODQ2NzUwMl5BMl5BanBnXkFtZTgwNjU3NTE4MjE@._V1_SX300.jpg","Ratings":[{"Source":"Internet Movie Database","Value":"6.7/10"},{"Source":"Rotten Tomatoes","Value":"73%"},{"Source":"Metacritic","Value":"81/100"}],"Metascore":"81","imdbRating":"6.7","imdbVotes":"71,973","imdbID":"tt1791528","Type":"movie","DVD":"28 Apr 2015","BoxOffice":"$6,100,613","Production":"Warner Bros. Pictures","Website":"http://inherentvicemovie.com/","Response":"True"}
 ]
 
-/* Opbygning af webside til præsentation af film */
+/* 
+Gruppeopgaver
+Opgave 1
+Opbygning af webside til præsentation af film */
 
 var e0 = document.getElementById("0");
 e0.innerHTML = filmliste[0].Title+' ('+filmliste[0].Year+')';
@@ -71,7 +74,9 @@ var e3 = document.getElementById("3");
 e3.innerHTML = '<p>'+filmliste[3].Title+' ('+filmliste[3].Year+')'+'</p>';
 e3.id = filmliste[3].imdbID;
 
-/* Farvelæg filmtitler ud fra bedømmelser  */
+/*
+Opgave 2 
+Farvelæg filmtitler ud fra bedømmelser  */
 
 function Farve(){
 for (i = 0; i < 3; i++){
@@ -88,7 +93,8 @@ for (i = 0; i < 3; i++){
 }
 }
 
-/* Gør det muligt at få vist mere information om filmen, ved at trykke på knappen under titlen 
+/* Opgave 1 
+Gør det muligt at få vist mere information om filmen, ved at trykke på knappen under titlen 
 4 knapper med hver sin tilhørende funktion */
 
 var info0 = 0;
@@ -140,7 +146,8 @@ var info3 = 0;
 }
 
 
-/* Procentuel sammenligning af to lister 
+/* Opgave 3/4
+Procentuel sammenligning af to lister 
 SamL(filmliste[18].Actors, filmliste[19].Actors) giver 25% fordi der er 1 ud af 4 overlap af skuespillere*/
 
 
@@ -158,10 +165,5 @@ function OverLap0(a, b) {
 	} 
 }
 }
-
-
-
-
-
 
 
