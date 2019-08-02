@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div id="kontrolsektion">
+      <input type="text" name="input" value=""><br>
+      <p> Vis ratings (rød er lavest rating, blå er højest rating)</p>
+      <button onclick="Farve()" type="button">Vis ratings</button>
+  </div>
+
+  <div id="filmoversigt">
+
+    <p id="0"></p>
+    <button onclick="VisMere0()" type="button">Vis/skjul mere info</button>
+    <p id="t0"></p>
+    <button onclick="OverLap0(filmliste[0].Actors, filmliste[1].Actors)" type="button">Find andre film med samme skuespillere</button>
+
+    <p id="1"></p>
+    <button onclick="VisMere1()" type="button">Vis/skjul mere info</button>
+    <p id="t1"></p>
+    <button onclick="OverLap1()" type="button">Find andre film med samme skuespillere</button>
+
+    <p id="2"></p>
+    <button onclick="VisMere2()" type="button">Vis/skjul mere info</button>
+    <p id="t2"></p>
+    <button onclick="OverLap2()" type="button">Find andre film med samme skuespillere</button>
+
+    <p id="3"></p>
+    <button onclick="VisMere3()" type="button">Vis/skjul mere info</button>   
+    <p id="t3"></p>
+    <button onclick="OverLap3()" type="button">Find andre film med samme skuespillere</button>
+
+</div>
+
+<script src="filmliste.js"></script>
+</body>
+</html>
